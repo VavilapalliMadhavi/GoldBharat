@@ -1,0 +1,44 @@
+section{
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+h2{
+    color:#fff;
+    margin-left: 27px ;
+}
+
+
+
+.booking{
+    background-color: #192259;
+    border-radius: 15px;
+    border: 1px solid #464e8a;
+    padding: 6px 0 0;
+    height: 83px;
+    text-align: center;
+    margin: 10px auto;
+    width: 357px;
+}
+
+.booking i{
+    color:#faad39;
+    font-weight: 900;
+    margin: 5px 10px 0px 25px;
+}
+.book{
+    color:#faad39;
+    font-weight: 900;
+  
+  
+}
+
+#num{
+    color: #e7e4e4;
+    font-weight: 500;
+    font-size: 14px;
+    font-family:Inter;
+    text-align: justify;
+    padding-right: 30px;
+    margin: 5px 10px 0px 30px;
+}

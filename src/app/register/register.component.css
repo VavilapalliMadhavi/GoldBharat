@@ -1,0 +1,183 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+section{
+    margin-top: 5%;
+    
+}
+
+#cont{
+    background-color:#192259 !important;
+    border-radius: 10px ;
+    padding: 40px 32px;
+    
+
+}
+
+#hello{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    color:#e7e4e4;
+    width: 250px;
+
+}
+
+
+#info{
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-weight: 600;
+    color: #e1b737;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.logo{
+    
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+.form-label{
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        color: #faad39;
+}
+
+.btn{
+    width: 100%;
+   
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #e6ddbf;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+p{
+    color: #8391a1;
+    font-family: Noto Sans;
+    font-size: 14px;
+
+}
+
+span{
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e1b737;
+    margin-left: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #192259;
+    border: 1px solid #464e8a;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+
+::placeholder {
+    color: gray; 
+    opacity: 1; 
+}
+ */
+
+
+ /* src/app/register/register.component.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+section {
+  margin-top: 5%;
+}
+
+#cont {
+  background-color: #192259 !important;
+  border-radius: 10px;
+  padding: 40px 32px;
+}
+
+#hello {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e7e4e4;
+  width: 250px;
+}
+
+#info {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e1b737;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #faad39;
+}
+
+.btn {
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #e6ddbf;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #8391a1;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+}
+
+span {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e1b737;
+  margin-left: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background-color: #192259;
+  border: 1px solid #464e8a;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+::placeholder {
+  color: gray;
+  opacity: 1;
+}
+

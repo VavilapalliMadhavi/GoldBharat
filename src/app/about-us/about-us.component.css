@@ -1,0 +1,9 @@
+section{
+    margin-top: 8%;
+}
+
+p, h2{
+    text-align: justify;
+    font-family: Roboto;
+    color: #fff;
+}

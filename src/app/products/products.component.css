@@ -1,0 +1,27 @@
+#sec2{
+    background-color:#192259;
+    margin-top: 7%;
+ }
+
+ 
+ #pro{
+    font-family: Lora;
+    font-size: 40px;
+    font-weight: 600;
+    color:#fff;
+    text-align: center;
+ }
+
+ #img1{
+    border-radius: 10px;
+    width: 306px;
+ }
+ 
+ #para{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    color:#fff;
+    text-align: center;
+    margin-top: 8px;
+ }

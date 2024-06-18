@@ -1,0 +1,137 @@
+<!-- <section>
+  <form>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+
+
+            <div class="col-md-5" id="cont">
+                <div class="logo">
+                    <img src="https://goldbharat.com/assets/GoldBharatone.png">
+                </div>
+
+                <div class="heading">
+                    <h5 id="hello">Hello! Register to get started</h5>
+                    <h3 id="info">Business Information</h3>
+                </div>
+
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Business Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex: Retail Gold">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Person Full Name *</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex: Kumar">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: *******@gmail.com">
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Phone Number *</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Ex: +91********">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="inputdate" class="form-label">Shop Establish Date *</label>
+                    <input type="date" class="form-control" id="inputdate" placeholder="Ex: dd/mm/yyyy">
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Pincode *</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex: 5*****">
+                  </div>
+
+                  <button type="button" class="btn btn-primary">Register</button>
+                  <p class="text-center">Already have an account?<span>Login Now</span></p>
+
+
+            </div>
+
+
+            <div class="col">
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+  </form>
+</section> -->
+
+
+
+<!-- src/app/register/register.component.html -->
+<section>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-5" id="cont">
+          <div class="logo">
+            <img src="https://goldbharat.com/assets/GoldBharatone.png">
+          </div>
+          <div class="heading">
+            <h5 id="hello">Hello! Register to get started</h5>
+            <h3 id="info">Business Information</h3>
+          </div>
+          <div class="mb-3">
+            <label for="businessName" class="form-label">Business Name</label>
+            <input type="text" class="form-control" id="businessName" formControlName="businessName" placeholder="Ex: Retail Gold">
+            <div *ngIf="registerForm.get('businessName')?.invalid && (registerForm.get('businessName')?.dirty || registerForm.get('businessName')?.touched)">
+              <small *ngIf="registerForm.get('businessName')?.errors?.['required']" class="text-danger">Business Name is required.</small>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Person Full Name *</label>
+            <input type="text" class="form-control" id="fullName" formControlName="fullName" placeholder="Ex: Kumar">
+            <div *ngIf="registerForm.get('fullName')?.invalid && (registerForm.get('fullName')?.dirty || registerForm.get('fullName')?.touched)">
+              <small *ngIf="registerForm.get('fullName')?.errors?.['required']" class="text-danger">Full Name is required.</small>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Ex: *******@gmail.com">
+            <div *ngIf="registerForm.get('email')?.invalid && (registerForm.get('email')?.dirty || registerForm.get('email')?.touched)">
+              <small *ngIf="registerForm.get('email')?.errors?.['required']" class="text-danger">Email is required.</small>
+              <small *ngIf="registerForm.get('email')?.errors?.['email']" class="text-danger">Invalid email address.</small>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone Number *</label>
+            <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber" placeholder="Ex: +91********">
+            <div *ngIf="registerForm.get('phoneNumber')?.invalid && (registerForm.get('phoneNumber')?.dirty || registerForm.get('phoneNumber')?.touched)">
+              <small *ngIf="registerForm.get('phoneNumber')?.errors?.['required']" class="text-danger">Phone Number is required.</small>
+              <small *ngIf="registerForm.get('phoneNumber')?.errors?.['pattern']" class="text-danger">Invalid phone number format.</small>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="establishDate" class="form-label">Shop Establish Date *</label>
+            <input type="date" class="form-control" id="establishDate" formControlName="establishDate">
+            <div *ngIf="registerForm.get('establishDate')?.invalid && (registerForm.get('establishDate')?.dirty || registerForm.get('establishDate')?.touched)">
+              <small *ngIf="registerForm.get('establishDate')?.errors?.['required']" class="text-danger">Establish Date is required.</small>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="pincode" class="form-label">Pincode *</label>
+            <input type="text" class="form-control" id="pincode" formControlName="pincode" placeholder="Ex: 5*****">
+            <div *ngIf="registerForm.get('pincode')?.invalid && (registerForm.get('pincode')?.dirty || registerForm.get('pincode')?.touched)">
+              <small *ngIf="registerForm.get('pincode')?.errors?.['required']" class="text-danger">Pincode is required.</small>
+              <small *ngIf="registerForm.get('pincode')?.errors?.['pattern']" class="text-danger">Invalid pincode format.</small>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Register</button>
+          <p class="text-center">Already have an account? <span>Login Now</span></p>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </form>
+</section>

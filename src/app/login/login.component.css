@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+section{
+    margin-top: 5%;
+    
+}
+
+#cont{
+    background-color:#10194e !important;
+    border-radius: 10px ;
+    padding: 40px 32px;
+    
+
+}
+
+#hello{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    color:#e7e4e4;
+    width: 200px;
+    margin-bottom: 20px;
+
+}
+
+
+.logo{ 
+    margin-bottom: 20px;
+    height: 70px;
+    width: 100px;
+
+}
+
+.hmm{
+    text-align: center;
+}
+
+
+
+
+/* .form-label{
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        color: #faad39;
+} */
+
+.btn{
+    width: 100%;
+    height: 46px;
+    /* font-family: Noto Sans; */
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #e6ddbf;
+    color: #000;
+    margin-bottom: 80px !important;
+}
+
+p{
+    color: #e7e4e4;
+    font-family: Inter;
+    font-size: 15px;
+    
+
+}
+
+#log{
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e1b737;
+    margin-left: 5px;
+}
+
+input{
+    height: 48px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background: #192259;
+    border: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color:#fff !important;
+}
+
+.input-group-text{
+    height: 48px;
+    background: #192259;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+
+
+::placeholder {
+    color: gray; 
+    opacity: 1; 
+}
+
+
+
+
+
+
+
+
